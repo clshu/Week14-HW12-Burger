@@ -1,3 +1,47 @@
+body {
+	background-color: orange;
+}
+
+h1 {
+	text-align: center;
+	font-style: italic;
+	font-weight: bolder;
+}
+
+
+.box {
+	border: 1px solid orange;
+	border-radius: 5px;
+
+	float: left;
+	
+}
+
+#box2, #box4 {
+	width: 40%;
+}
+#box1, #box3, #box5 {
+	width: 5%;
+}
+
+
+.lowerBox {
+
+	height: 150px;
+}
+#box6, #box7 {
+	width: 33%;
+	height: 100px;
+}
+
+#box6 {
+	clear: left;
+}
+
+#box2, #box4, #box7 {
+	background-color: white;
+}
+/*
 li {
   background: #FAEBD7;
   margin: 5px;
@@ -17,3 +61,4 @@ li {
 .form-group {
   margin-bottom: 5px;
 }
+*/
