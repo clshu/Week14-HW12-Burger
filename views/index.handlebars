@@ -5,26 +5,25 @@
 </div>
 
 <div class="box upperbox" id="box2">
-
-  <div style="display: inline-block">
     
   {{#each burgers}}
     {{#unless this.devoured}}
+      <div>
       <p>
         {{this.id}}.
         {{this.burger_name}}
-      
-      
-        
+      </p>
+      </div>
+      <div style="display: inline-block;">  
       <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="true">
           <button class="devoureIt">Devoure It</button>
         </form> 
-      </p>
+      </div>
     {{/unless}}
   {{/each}}
-  </div>
 </div>
+
 
 <div class="box upperbox" id="box3">
   
@@ -60,7 +59,7 @@
     <input type="text" id="burger" name="burger_name">
   </div>
 
-  <button type="submit">Add Burger</button>
+  <button id="submitBuger" type="submit">Submit</button>
 </form>  
 </div>
 
