@@ -1,7 +1,6 @@
-/*
-Here is where you make the connection to the database and export and used by the O.R.M.
-*/
+
 var mysql = require('mysql');
+// Make mysql connection work in localhost or Heroku
 var localConnection = "mysql://root:puppetmaster@localhost:3306/burgers_db";
 var dbConnection = process.env.JAWSDB_URL || localConnection;
 var connection = mysql.createConnection(dbConnection);
