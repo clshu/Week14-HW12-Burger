@@ -8,18 +8,17 @@
     
   {{#each burgers}}
     {{#unless this.devoured}}
-      <div>
-      <p>
+    
+      
+      <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
+      <p style="display: inline-block;">
         {{this.id}}.
         {{this.burger_name}}
       </p>
-      </div>
-      <div style="display: inline-block;">  
-      <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="true">
-          <button class="devoureIt">Devoure It</button>
+          <button class="devoureIt" style="display: inline-block;">Devoure It</button>
         </form> 
-      </div>
+     
     {{/unless}}
   {{/each}}
 </div>
