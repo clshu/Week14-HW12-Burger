@@ -4,10 +4,10 @@ Here is where you make the connection to the database and export and used by the
 var mysql = require('mysql');
 var connection = mysql.createConnection({
 	port: 3306,
-	host: 'localhost',
-	user: 'root',
-	password: '',
-	database: 'burgers_db'
+	host: 'ehc1u4pmphj917qf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+	user: 'apfn96qh4rrmnuh0',
+	password: 'zwou44c8mchdhl07',
+	database: 'ddlrb2kn7cuc1wuj'
 });
 
 connection.connect(function (err) {
