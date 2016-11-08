@@ -28,7 +28,10 @@ button {
 #submitBuger {
 	background-color: green;
 }
-
+/*
+ Use boxes to mimic a grid system
+ fill up space with empty boxes at where requires empty grid 
+*/ 
 .box {
 	border: 1px solid orange;
 	border-radius: 5px;
