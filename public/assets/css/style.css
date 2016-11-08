@@ -1,5 +1,7 @@
 body {
 	background-color: orange;
+	font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 #burgerHeader {
@@ -13,6 +15,19 @@ body {
 	margin: auto;
 }
 
+button {
+	color: white;
+	border: 1px;
+	border-radius: 3px;	
+}
+
+.devoureIt {
+	background-color: blue;
+}
+
+#submitBuger {
+	background-color: green;
+}
 
 .box {
 	border: 1px solid orange;
@@ -25,15 +40,15 @@ body {
 #box2, #box4 {
 	width: 40%;
 }
+
 #box1, #box3, #box5 {
 	width: 5%;
 }
 
-
 .lowerBox {
-
 	height: 150px;
 }
+
 #box6, #box7 {
 	width: 33%;
 	height: 100px;
@@ -46,26 +61,3 @@ body {
 #box2, #box4, #box7 {
 	background-color: white;
 }
-
-
-/*
-li {
-  background: #FAEBD7;
-  margin: 5px;
-  padding: 5px;
-}
-
-.label {
-  font-weight: bold;
-}
-
-.create-update-form {
-  background: aqua;
-  margin: 5px;
-  padding: 5px;
-}
-
-.form-group {
-  margin-bottom: 5px;
-}
-*/
